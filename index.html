@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Moeda FF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Radar Moeda FF</h1>
+    </header>
+
+    <main>
+        <section id="coach">
+            <h2>Coach Ao Vivo (IA - Alok)</h2>
+            <div id="coach-box">
+                <p id="coach-message">“Se não tem gelo, tem cabeça — pensa antes do rush.”</p>
+                <button onclick="nextMessage()">Nova Dica</button>
+            </div>
+        </section>
+
+        <section id="radar">
+            <h2>Radar Inteligente</h2>
+            <div id="radar-box">
+                <p>Zonas de perigo simuladas:</p>
+                <ul id="radar-list">
+                    <li>Safe zone atual: <span class="safe">Hangar</span></li>
+                    <li>Som detectado: <span class="danger">Bimasak</span></li>
+                </ul>
+                <button onclick="addMemory()">Gravar padrão de safe</button>
+            </div>
+        </section>
+
+        <section id="memoria-safe">
+            <h2>Memória de Safe</h2>
+            <ul id="safe-memory-list">
+                <li>Safe antiga: Clock Tower</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Radar Moeda FF - Projeto de Gabriel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
